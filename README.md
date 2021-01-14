@@ -6,6 +6,6 @@ On linux and mac run on your shell: curl --proto '=https' --tlsv1.2 https://sh.r
 
 On windows you can install it from here:  https://www.rust-lang.org/tools/install
 
-more about install here: https://doc.rust-lang.org/book/ch01-01-installation.html
+More about install here: https://doc.rust-lang.org/book/ch01-01-installation.html
 
-When installed, just type _cargo run_ on one of the project folders and something should happen!
+When installed, just type _cargo run_ on the shell on one of the project folders and something should happen!
