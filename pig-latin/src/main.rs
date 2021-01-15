@@ -6,6 +6,8 @@ so “first” becomes “irst-fay.” Words that start with a vowel have “hay
 Keep in mind the details about UTF-8 encoding!
 */
 
+//This is a stack overflow solution as I was too stupid to figure this one out myself :D My own solution was kinda bloated anyways...
+
 fn main() {
     println!("The pig-latin converter!");
     println!("Enter a word:");
@@ -15,6 +17,7 @@ fn main() {
     io::stdin()
         .read_line(&mut word) //mutable refrence to guess, we don't want to transfer ownership!
         .expect("Failed to read line"); //expect causes the program to crash if io::Result returned from .read_line is an Err value
+
     println!("Your word in pig-latin is:");
     match word.chars().nth(0).unwrap() {
         'a' | 'e' | 'i' | 'o' | 'u' | 'y' | 'ä' | 'ö' | 'A' | 'E' | 'I' | 'O' | 'U' | 'Y' | 'Ä' | 'Ö' => println!("{}-hay", word.trim()), //if match print word-hay
